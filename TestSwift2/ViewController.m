@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TestSwift2-swift.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)showSwiftTapped:(id)sender {
+    SwiftViewController *controller = [[SwiftViewController alloc] initWithNibName:@"SwiftViewController" bundle:nil];
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 @end
